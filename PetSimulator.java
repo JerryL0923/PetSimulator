@@ -27,15 +27,30 @@ public class PetSimulator
       }
     }
     // when you get back, your cats make some noise
-    
+    for (Pet p : pets) {
+      if (p.getType() == 1) {
+        p.makeNoise(); 
+      }
+    }
     // give all of your pets a treat
-
+    for (Pet p : pets) {
+      p.giveTreat();
+    }
     // groom your cats
- 
+    for (Pet p : pets) {
+      if (p.getType() == 1) {
+        p.groom();
+      }
+    }
     // grooming is done, play with all pets
-
+    for (Pet p : pets) {
+      p.play();
+    }
     // whew, that was tiring, all pets nap and get fed
-
+    for (Pet p : pets) {
+      p.feed();
+      p.sleep();
+    }
     System.out.println("--- MY PETS ---");
     // show the state of all of your pets
     
