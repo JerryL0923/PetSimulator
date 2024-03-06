@@ -6,7 +6,7 @@ public class PetSimulator
   public static void main(String[] args)
   {
     // create an array that can hold up to 10 pets (does not require looping)
-    Pet[] pets = new Pet[4]; 
+    Pet[] pets = new Pet[10]; 
     // adopt (create and name) four pets, two cats, two dogs (does not require looping)
     pets[0] = new Pet("megatron", 1); 
     pets[1] = new Pet("starscream", 1); 
@@ -53,13 +53,18 @@ public class PetSimulator
     }
     System.out.println("--- MY PETS ---");
     // show the state of all of your pets
-    
+    for (Pet p : pets) {
+      System.out.println(p); 
+    }
     // You decide to get a couple of pets for your friend (does not require looping)
-    
+    pets[4] = new Pet("grimlock", 1); 
+    pets[5] = new Pet("sideswipe", 2); 
     // set the owner of the new pets to your friends name
-    
+
     System.out.println("--- MY PETS ---");
     // show the state of all of your pets
-
+    for (Pet p : pets) {
+      System.out.println(p); 
+    }
   }
 }
